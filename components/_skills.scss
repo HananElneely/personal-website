@@ -1,0 +1,23 @@
+.skillsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+    grid-column: 1/-1;
+}
+
+.skillsTitle {
+    font-size: 3.8rem;
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.skillsYears {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding-left: 4rem;
+}
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+}

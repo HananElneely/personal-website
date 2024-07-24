@@ -1,0 +1,6 @@
+html:has(.lightsCheckbox:checked) {
+    --color-background: var(--black);
+    --color-text: var(--white);
+    --grey: #080808;
+    --color-input-border: var(--white);
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <video class="videoLoop" src="video-loop.mp4" autoplay loop muted></video>
+      
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigationList">
+            <li>
+              <a href="#bio" class="navigationLink">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigationLink">Skills</a>
+            </li>
+              <a href="#projects" class="navigationLink">Projects</a>
+            </li>
+            <li>
+              <a href="#clients" class="navigationLink">Clients</a>
+            </li>
+            <li>
+              <a href="#contact" class="navigationLink">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="lightControl">
+          Switch Theme
+          <input type="checkbox" id="lightsCheckbox" class="lightsCheckbox" />
+          <label for="lightsCheckbox" class="lightsLable"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="section bio">
+        <div class="bioData">
+          <h1 class="bioHaeding">
+            Welcome!<br />
+            I'm a junior Front-End Developer
+          </h1>
+          <p class="bioObjective">
+            
+            I'm <span class="bio__name">Hanan Elneely</span> ,I have experience with HTML, CSS, and JavaScript.
+            Enjoy exploring my work, and if you have any questions, feel free to
+            reach out to me.
+          </p>
+          <a href="#" class="bioLinks look-my-work">Enjoy my work</a>
+          <a href="#" class="bioLinks find-out-link">
+            Download CV <span class="bioArrow">↓</span>
+          </a>
+        </div>
+        <div class="bioPiccontent">
+          <img
+            class="bioPic"
+            src="photo_2024-07-05_06-47-39.jpg"
+            alt="pic of Hanan Elneely"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="section skills section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+        <ul class="skillsList">
+          <li class="skillsColumn">
+            <h3 class="skillsTitle">
+              <img class="icon" src="html-5-svgrepo-com.svg" alt="icon HTML" />
+              HTML
+            </h3>
+            <span class="skillsYears">1 years</span>
+          </li>
+          <li class="skillsColumn">
+            <h3 class="skillsTitle">
+              <img
+                class="icon"
+                src="css-3-logo-svgrepo-com.svg"
+                alt="icon CSS"
+              />
+              CSS
+            </h3>
+            <span class="skillsYears">1 years</span>
+          </li>
+          <li class="skillsColumn">
+            <h3 class="skillsTitle">
+              <img class="icon" src="js-svgrepo-com.svg" alt="icon Js" />
+              Javascript
+            </h3>
+            <span class="skillsYears">1 years</span>
+          </li>
+          <li class="skillsColumn">
+            <h3 class="skillsTitle">
+              <img
+                class="icon"
+                src="react-1-logo-svgrepo-com.svg"
+                alt="icon react"
+              />
+              React Js
+            </h3>
+            <span class="skillsYears">1 years</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="h2-heading"> MY FEATURED PROJECTS</h2>
+        <div class="projectsMain">
+          <img class="projectsImg responsiveImg" src="/project-1.jpg" alt="image project">
+          <div class="projectData">
+            <h3 class="h3-heading">project Name</h3>
+            <p class="projectsDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque enim ullam laboriosam cumque deleniti tempore labore maxime cupiditate optio fugiat, est quisquam dolorem autem voluptas, vero eum fuga incidunt.
+            </p>
+            <a href="#" target="_blank" class="projectsLink">Project Link</a>
+          </div>
+
+          <div class="projectData">
+            <h3 class="h3-heading">project Name</h3>
+            <p class="projectsDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque enim ullam laboriosam cumque deleniti tempore labore maxime cupiditate optio fugiat, est quisquam dolorem autem voluptas, vero eum fuga incidunt.
+            </p>
+            <a href="#" target="_blank" class="projectsLink">Project Link</a>
+          </div>
+          <img class="projectsImg responsiveImg" src="/project-2.jpg" alt="image project">
+        </div>
+      </section>
+
+      <section id="clients" class="section clients section--with-bg" >
+        <h2 class="h2-heading">What My Clients Says</h2>
+        <div class="clientsOpinios">
+          <div class="clientsWrapper">
+            <p class="clientsOpinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nam beatae nisi Dicta, facere praesentium ut ullam reiciendis consequatur soluta. Delectus veritatis accusantium vel sunt saepe facilis reprehenderit ipsa quibusdam!
+            </p>
+            <p class="clientsOpinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nam beatae nisi Dicta, facere praesentium ut ullam reiciendis consequatur soluta. Delectus veritatis accusantium vel sunt saepe facilis reprehenderit ipsa quibusdam!
+            </p>
+            <p class="clientsOpinion">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi nam beatae nisi Dicta, facere praesentium ut ullam reiciendis consequatur soluta. Delectus veritatis accusantium vel sunt saepe facilis reprehenderit ipsa quibusdam!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div>
+          <p class="contactDescription">
+            Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time
+            zones away.
+          </p>
+
+          <a class="contactEmail" href="mailto: Hananelneely0@gmail.com" >Hananelneely0@gmail.com</a>
+
+          <div class="contactSocials">
+            <a class="contactSocial" href="#">
+              <img src="./images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a class="contactSocial" href="#">
+              <img src="./images/brand/github.svg" alt="github" />
+            </a>
+            <a class="contactSocial" href="#">
+              <img src="./images/brand/instagram.svg" alt="instagram" />
+            </a>
+            <a class="contactSocial" href="#">
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+        </div>
+      </div>
+
+      <div class="contactFormcontent">
+        <h2 class="h2-heading">
+          Let’s Work Together!
+        </h2>
+        <form action="results.html">
+          <div class="contactInputs">
+            <input class="contactInput" type="text" name="name" placeholder="Full Name" required>
+            <input class="contactInput" type="tel" name="tel" placeholder="Phone" required pattern="[0-9]{11}">
+          </div>
+            <textarea class="contactInput contactTextarea" name="message" placeholder="Your Message"required rows="1"></textarea>
+            <input type="submit" class="contactButton" value="Send Message">
+        </form>
+      </div>
+      </section>
+
+      <footer class="footer">© 2024 by Hanan Elneely</footer>
+    </div>
+  </body>
+</html>

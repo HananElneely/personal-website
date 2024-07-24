@@ -1,0 +1,50 @@
+.contact{
+    column-gap: 20rem;
+    row-gap: 10rem;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.contactDescription {
+    font-size: 2rem;
+    line-height: 1.9;
+}
+
+.contactSocial {
+    transition: var(--transition-timing);
+}
+.contactSocial:hover {
+    transform: scale(1.2);
+}
+.contactEmail {
+    font-weight: var(--font-weight-bold);
+    margin: 2.5rem 0;
+}
+
+.contactInputs {
+    display: flex;
+    gap: 3rem;
+}
+
+.contactInput {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 0.1rem solid var(--color-input-border);
+    flex: 1;
+}
+
+.contactTextarea {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.contactButton {
+    font-weight: var(--font-weight-medium);
+    font-size: 2rem;
+    margin-top: 3.4rem;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem 1rem;
+    border: none;
+}

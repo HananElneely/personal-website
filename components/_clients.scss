@@ -1,0 +1,20 @@
+.clientsOpinions {
+    grid-column: 1/-1;
+    line-height: 1.7;
+    font-size: 4rem;
+}
+
+.clientsWrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.clientsOpinion {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    font-size: 4rem;
+    line-height: 1.7;
+
+}

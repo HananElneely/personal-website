@@ -1,0 +1,81 @@
+.header {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--color-background);
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--color-background);
+    border-bottom: 0.1rem solid var(--Kashmir);
+    top: 0;
+}
+
+.navigation {
+    transition: var(--transition-timing);
+}
+
+.navigationList {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigationLink:active ,
+.navigationLink:hover {
+    text-decoration: underline;
+    color: var(--Pink);
+}
+
+.burger-menu__checkbox {
+    display: none;
+}
+
+.lightControl {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.lightsLable {
+    width: 4.5rem;
+    height: 2.2rem;
+    display: block;
+    position: relative;
+    background-color: var(--black);
+    padding: 0.3rem 0.4rem; 
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lightsLable::after {
+    content: "";
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.lightsCheckbox {
+    display: none;
+}
+
+.lightsCheckbox:checked + .lightsLable {
+    background-color: var(--blue);
+}
+
+.lightsCheckbox:checked + .lightsLable::after {
+    background-color: var(--white);
+     transform: translateX(2.1rem); /*علشان تتحرك  */
+}
